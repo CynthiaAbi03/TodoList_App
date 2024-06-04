@@ -1,6 +1,22 @@
 # TodoList
 build a todo_list for preselection hackaton 
 
+ENGLISH
+
+# Run the backend first
+
+# To run the backend
+enter the command cd ./Backend
+then npm install
+finally npm run dev
+
+# To run the Frontend 
+enter  the command cd ./Frontend
+then npm install
+finally npm run dev
+
+
+FRENCH
 # Lancez le backend en premier
 
 #  Pour Lancer le Backend

@@ -15,3 +15,17 @@ Pour lancer l'interface utilisateur (Front-End), exécutez les commandes suivant
 npm install
 npm run dev
 
+### how to use Silicon Task 
+
+1. Create a  new folder s
+2. Create a new task 
+3. Edit task while adding Description 
+4. Click on icon to save 
+
+
+### fonctionnalities added
+
+
+-Complete task when you did it 
+-lock task to private if you don't want anybody sees it 
+

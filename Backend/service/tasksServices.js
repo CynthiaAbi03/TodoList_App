@@ -2,22 +2,6 @@ const sqlite3 = require("sqlite3").verbose();
 const db = new sqlite3.Database("database.db");
 
 
-// Crée une nouvelle tâche dans la base de données
-/* function createTask(title, description, completed,date,password) {
-    db.run(
-      `INSERT INTO task (title, description, completed, date,password) VALUES (?, ?, ?, ?, ?)`,
-      [title, description, completed, date, password],
-      function (err) {
-        if (err) {
-          console.error(err.message);
-        } else {
-          console.log(`Tâche "${title}" avec l'ID ${this.lastID} a été créée.`);
-        }
-      }
-    );
-  } */
-
-  // Crée une nouvelle tâche sans la description  dans la base de données
 function createTask(title,completed,locked,folder_name,date,password) {
   db.run(
     `INSERT INTO task (title,completed,locked,folder_name,date,password) VALUES (?,?,?,?,?,?)`,
@@ -287,11 +271,9 @@ module.exports={createTask,
   getAllTasks,
   getTask,
   filterTaskByCompleted,
-  filterTaskByDate
-  //filterTaskByPriority
-  ,completeTask,
+  filterTaskByDate,
+  completeTask,
   deleteTaskByFolder,
-  //prioritizeTasks,
   getAllTaskFolder,
   getAllTaskCompleted,
   updateTaskDescription,
